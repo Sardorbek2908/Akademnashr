@@ -25,6 +25,26 @@ a {
     text-decoration: none;
 }
 
+.all-btn {
+    padding: 12px 24px;
+    background-color: var(--primary-orange);
+    border-radius: 4px;
+    font-family: var(--roboto);
+    font-style: 13px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    color: var(--white);
+    transition: .4s;
+}
+
+.all-btn:hover {
+    ` opacity: 0.8;
+}
+
+.all-btn:active {
+    opacity: 0.8;
+}
+
 /* Container size */
 
 .container {
@@ -36,4 +56,139 @@ a {
 
 body {
     font-family: var(--roboto);
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-line {
+    width: 1330px;
+    height: 5px;
+    left: 110px;
+    opacity: 1;
+    background: #FF7500;
+    margin: auto;
+}
+
+.site-header {
+    padding-top: 16px;
+}
+
+.site-logo {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.logo-name {
+    color: var(--dark);
+    font-family: var(--robotocondensed);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+.logo-name::after {
+    content: "nashr";
+    color: var(--primary-orange);
+    font-family: var(--robotocondensed);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+}
+
+.header-link {
+    font-family: var(--roboto);
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.header-link:hover {
+    color: var(--primary-orange);
+}
+
+.header-link:active {
+    opacity: 0.6;
+}
+
+.header-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: var(--primary-orange);
+    transition: .5s;
+}
+
+.header-link:hover::after {
+    width: 100%;
+}
+
+/* HERO */
+
+.site-hero {
+    background-color: var(--dark);
+}
+
+.site-hero__desc {
+    width: 387px;
+    height: 328px;
+    top: 177px;
+    left: 170px;
+    opacity: 1;
+
+}
+
+.site-hero__title {
+    font-family: var(--robotocondensed);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 0.5px;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    padding-bottom: 24px;
+}
+
+.site-hero__title::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    opacity: 1;
+    background-color: var(--primary-orange);
+}
+
+.site-hero__text {
+    font-family: var(--roboto);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: var(--white);
+    padding-bottom: 32px;
+}
+
+.site-hero__image {
+    width: 510px;
+    height: 510px;
+    opacity: 1;
+    border-radius: 8px;
+    transform: translateY(40px);
+    box-shadow: 24px 24px 0px 0px #FF750099;
 }
