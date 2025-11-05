@@ -375,4 +375,10 @@ body {
     color: #000;
 }
 
+.menu-link:hover {
+    color: var(--primary-orange);
+}
+.menu-link:active {
+    opacity: 0.6;
+}
 /* FOOTER */
